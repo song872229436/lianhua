@@ -1,0 +1,9 @@
+.entry-content a {
+    color: #7d7166;
+    font-weight: bold;
+}
+
+.entry-content a:hover {
+    color: #3c8c8e;
+    text-decoration: underline;
+}

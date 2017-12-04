@@ -1,0 +1,94 @@
+/* Blog Page CSS */
+.page-header {
+	margin: 1.65em 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.page-header .page-title {
+	margin-bottom: 0px;
+}
+
+.blog-menu {
+	padding-top: 0px;
+}
+
+.single.single-post .site-content {
+	margin-bottom: 0px;
+}
+
+.single-post-wrapper > article.post .post-body {
+	width: 100%;
+}
+.single-post .post-body h1{ 
+	margin-bottom: 10px;
+	padding: 0px 15px;
+	text-transform: uppercase;
+	color: #7d7166;
+}
+
+.single-post-wrapper > article.post .entry-meta {
+	padding: 0px 15px;
+	width: 100%;
+}
+
+.single-post .wp-post-image{
+	margin-bottom: 0px;
+}
+
+.single-post-wrapper > article.post .media-attachment{
+	margin-bottom: 10px;
+}
+
+.single-post .content-area .site-main {
+	margin-top: 30px;
+}
+
+.single-post .content-area .site-main .blog-menu {
+	display: none;
+}
+
+.single-post .entry-content .no-big-letter p:first-child:first-letter{
+	text-align: justify;
+    font-size: 1em;
+    float: none;
+    margin: 0;
+    padding-right: 0px;
+    font-weight: normal;
+    line-height: initial;
+}
+
+.post-navigation .meta-nav {
+    color: #3c8c8e;
+    font-weight: bold; 
+}
+
+.post-navigation .post-title {
+	color: #7d7166;
+}
+
+.single-post .social-share-icons .social-icons li a,
+.single-post .social-share-icons h4{
+	color: #3c8c8e;
+}
+.single-post .social-share-icons .social-icons > li + li {
+	border-left-color: #7d7166; 
+}
+
+.single-post .entry-content p:first-child:first-letter {
+	color: #7d7166;
+}
+/* BLOG LIST */
+.blog .posts article .entry-title a {
+	color: #7d7166;
+}
+
+.blog .site-main > article:first-child {
+	display: none;
+}
+
+.blog .blog-menu .menu-item:first-child a ,
+.blog-menu a.active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}

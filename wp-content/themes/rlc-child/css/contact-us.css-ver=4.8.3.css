@@ -1,0 +1,44 @@
+/* Contact Us CSS */
+.wpcf7-form .form-container {
+	margin-bottom: 10px;
+}
+
+.wpcf7-form .form-container input[type='text'],
+.wpcf7-form .form-container input[type='email'] {
+	width: 100%;
+}
+.wpcf7-form .form-container textarea {
+	height: 120px;
+	width: 100%;
+}
+
+.page-id-657 input[type="text"], 
+.page-id-657 input[type="email"], 
+.page-id-657 input[type="url"], 
+.page-id-657 input[type="password"], 
+.page-id-657 input[type="search"], 
+.page-id-657 textarea, 
+.page-id-657 .input-text {
+    padding: 0.822em 1.214em;
+    background-color: transparent;
+    color: #857a70 ;
+    line-height: 1.286em;
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border-width: 1px;
+    /* border-style: solid; */
+    border-color: #857a70 ;
+    box-shadow: 1px 1px 3px lightgrey;
+}
+
+.contact-logo {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info {
+        margin-top: 20px;
+    }
+}

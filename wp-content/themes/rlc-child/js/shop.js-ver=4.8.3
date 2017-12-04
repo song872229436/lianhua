@@ -1,0 +1,63 @@
+function encodeParam(obj) {
+	var param = '?';
+	for(var key in obj) 
+		param += key + '=' + obj[key];
+	
+	return param;
+}
+	
+jQuery(document).ready(function($) {
+	
+	$( '.bewear-sorting select' ).each(function() {
+		var currentOption = $('<a/>', {
+			'class': 'current-label'
+		});
+		currentOption.text(
+			($('[selected]', this).length > 0 ) ?
+			$('[selected]', this).text() :
+			$('option:first-of-type', this).text()
+		);
+		
+		currentOption.attr('param', 
+			($('[selected]', this).length > 0 ) ?
+			$('[selected]', this).val() :
+			$('option:first-of-type', this).val()
+		);
+		
+		var ulElement = $('<ul/>', {
+			'class': $(this).attr( 'class' )
+		});
+		$( 'option', this ).each(function() {
+			var liElement = $('<li/>', {
+				'param': $(this).val()
+			});
+			liElement.text( $(this).text() );
+			ulElement.append(liElement);
+		});
+		
+		ulElement.insertAfter( $(this) );
+		currentOption.insertAfter( $(this) );
+	});
+	
+	$('.bewear-sorting ul').each(function() {
+		var ulElement = $(this);
+		var currentOption = $('.current-label', $(this).parent());
+		
+		$('li', this).click(function() {
+			var category = ulElement.hasClass('filterby') ? $(this).attr('param') : $('.woocommerce-filtering .current-label').attr('param');
+			var params = {
+				'orderby': ulElement.hasClass('orderby') ? $(this).attr('param') : $('.woocommerce-ordering .current-label').attr('param')
+			};
+			
+			if( category == 'all' ) category = '';
+			else category += '/';
+			
+			var url = '/shop/' + category + encodeParam( params );
+			
+			if( currentOption.text() !== $(this).text() ) 
+				window.location.href = url;
+		});
+	});
+	
+
+});

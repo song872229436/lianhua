@@ -1,0 +1,69 @@
+/* Home CSS */
+.home .bewear-sorting {
+	display: none;
+}
+.home .product-posts  .section-title {
+	color: #7c7166;
+}
+
+.home .product-block .featured-product .product-info h3 {
+	color: #7c7166;
+}
+
+.home .product-block .featured-product .product-info .price {
+	color: #3c8c8e;
+}
+
+.home .product-posts .posts-block .recent-post .post-action {
+	color: #7c7166;
+}
+
+.home .product-posts .posts-block .recent-post .read-more {
+	color: #3c8c8e;
+}
+
+.home .product-posts.row {
+	display: none;
+}
+
+.home .homepage-separator {
+	display: none !important;
+	margin-bottom: 0px !important;
+}
+
+.home .newsletter-subscription {
+	padding: 0px 0px 45px;
+	border-top: none;
+}
+
+.home .lookbook-carousel-with-products {
+	margin-bottom: 20px !important;
+}
+
+.home .lookbook-products .size-chart-popup-wrapper {
+	display: none;
+}
+
+.home .mc4wp-form { 
+	width: 502px;
+	margin: 0 auto;
+}
+
+.home .mc4wp-form-fields input[type='email']{
+	width: 75%;
+    float: left;
+    background-color: #f3f3f3;
+    border-color: #dadada;
+    padding: 0.822em 1.214em;
+    color: #818181;
+    line-height: 1.286em;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	height: 43px;
+}
+
+.home .mc4wp-form-fields input[type='submit']{
+	    float: right;
+    width: 25%;
+    padding: 0.822em 1.214em;
+    height: 43px;
+}

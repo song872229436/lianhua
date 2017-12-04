@@ -1,0 +1,6 @@
+jQuery(document).ready(function($){
+	if(jQuery(document).width() < 768 ) {
+		$('.home .products-loop-wrapper .products').owlCarousel({responsive:{ 1100: {items: 5}, 768: {items: 3}, 767: {items: 1}, 300: {items: 1} } });
+		$('.home .products-loop-wrapper').addClass('owl-carousel');
+	}
+});

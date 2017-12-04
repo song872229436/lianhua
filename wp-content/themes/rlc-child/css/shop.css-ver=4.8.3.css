@@ -1,0 +1,110 @@
+/* Shop CSS */
+.jumbotron-product-category .jumbo-title {
+	color: #807469;
+	font-size: 2.5em;
+    font-weight: 300;
+	text-shadow: 1px 1px 6px grey;
+	text-transform: uppercase;
+}
+
+.bewear-sorting .woocommerce-sorting-container {
+	float: right;
+	display: flex;
+    align-items: center;
+}
+
+.products > .product .price {
+	color: #7d7166;
+}
+
+.bewear-sorting > * {
+	padding: 10px 0px !important;
+}
+
+.bewear-sorting .before-sortby-text:hover {
+	cursor: pointer;
+}
+
+.bewear-sorting select {
+	display: none !important;
+}
+
+.bewear-sorting .current-label {
+	cursor: default;
+	padding-left: 5px;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	padding-bottom: 30px;
+}
+
+.bewear-sorting .current-label:hover {
+	cursor: pointer;
+}
+
+.bewear-sorting .current-label:after {
+	top: 50%;
+	right: -20px;
+	content: "B";
+    float: right;
+	position: absolute;
+    font-size: 1.714em;
+    line-height: 0.583em;
+    margin-left: 0.125em;
+	transform: translateY(-50%);
+    font-family: "bewear" !important;
+}
+
+.bewear-sorting ul {
+    top: 35px;
+    left: 50%;
+	margin: 0;
+	z-index: 10;
+	float: left;
+	display: none;
+	list-style: none;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.bewear-sorting ul:hover, 
+.bewear-sorting .current-label:hover + ul, 
+.bewear-sorting .before-sortby-text:hover + form ul {
+	display: block;
+}
+
+.bewear-sorting ul > li {
+	color: #737373;
+	display: block;
+	min-width: 150px;
+	padding: 0.769em;
+    font-weight: 600;
+    line-height: 1.769em;
+	background-color: white;
+	border: 1px solid #e3e3e3 !important;
+}
+
+.bewear-sorting ul > li:hover {
+	cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.woocommerce-breadcrumb {
+	margin-bottom: 0px !important;
+}
+
+.woocommerce-ordering {
+	margin-right: 1.7em !important;
+	margin-bottom: 0px !important;
+}
+
+.bewear-sorting {
+	margin-bottom: 1.429em !important;
+}
+
+@media screen and (max-width: 768px) {
+	.bewear-sorting .woocommerce-sorting-container {
+		float: left;
+	}
+}

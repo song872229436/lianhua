@@ -1,0 +1,59 @@
+$=jQuery;
+$(document).ready(function(){
+    $ ( 'input#createaccount' ).click( function() {
+        console.log(window.location.href);
+        
+        $url = window.location.href.replace("?no_create", "");
+        
+        if(!$(this).is(":checked")) {
+            $url += "?no_create";
+            
+        }
+        
+        window.location.href=$url;
+        return false;
+    });
+});
+$(window).load(function() {
+    $(".woocommerce-checkout .customer-details .input-text").each(
+        function() {
+            if($(this).val() != "")
+                $(this).addClass("has-content");
+        }
+    );
+
+    $(".woocommerce-checkout .customer-details .input-text").focusout(
+        function() {
+            if($(this).val() != "")
+                $(this).addClass("has-content");
+            else
+                $(this).removeClass("has-content");
+        }  
+    )
+
+    $('.checkout_coupon .form-row').each(function() {
+        var label = $('.input-text', this).attr('placeholder');
+        $('.input-text', this).attr('placeholder', '');
+        $(this).append( $('<label/>') );
+        $('label', this).text( label );
+    });
+
+    $(".woocommerce-checkout .customer-details .form-row, .checkout_coupon .form-row").each(function() {
+        var focus_border = $('<span/>', {
+            'class': 'focus-border'
+        });
+        $('<i/>').appendTo(focus_border);
+        
+        $('.input-text, textarea', this).addClass('effect-20');
+        $('label', this).insertAfter(
+            $('.input-text, textarea', this)
+        );
+        focus_border.insertAfter(
+            $('label', this)
+        );
+    });
+
+    $('#menu-footer-4 a, ul.social-icons > li > a').attr('target', '_blank');
+    
+    
+});
